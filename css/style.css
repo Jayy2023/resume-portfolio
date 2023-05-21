@@ -159,7 +159,9 @@ CSS code. The margin-top property is used to add some space between the text and
     border: 1px solid #ccc; /* Add a border */
     border-radius: 4px; /* Add rounded corners */
   }
-  
+hr{
+    color: var(--skin-color);
+}  
   
   
 
