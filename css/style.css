@@ -101,6 +101,9 @@ ul
     max-width: 100%;
     margin-bottom: 60px;
 }
+p{
+    color: var(--text-black-900);
+}
 .section-title h2
 {
     font-size: 40px;
@@ -145,8 +148,21 @@ CSS code. The margin-top property is used to add some space between the text and
     position: relative;
     text-align: center;
 
+    
+}
+.project-video {
+    width: 100%; /* Set the desired width */
+    max-width: 640px; /* Set a maximum width */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Remove default inline behavior */
+    margin: 0 auto; /* Center the video horizontally */
+    border: 1px solid #ccc; /* Add a border */
+    border-radius: 4px; /* Add rounded corners */
   }
   
+  
+  
+
   .home-img img {
     display: block;
     margin-left: auto;
@@ -374,12 +390,25 @@ h3.my-profession
     font-size: 20px;
     color: var(--text-black-700);
 }
+.project{
+    color: white;
+}
 
 /* About */
 .about .about-content
 {
     flex: 0 0 100%;
     max-width: 100%;
+}
+.buttons{
+    background-color: var(--skin-color); /* Green background color */
+    color: white; /* Text color */
+    padding: 10px 20px; /* Padding around the button */
+    border: none; /* Remove default button border */
+    border-radius: 4px; /* Rounded corners */
+    font-size: 16px; /* Font size */
+    cursor: pointer; /* Cursor style */
+    transition: background-color 0.3s ease; /* Smooth color transition */
 }
 .about .about-content .about-text
 {
@@ -725,6 +754,9 @@ h3.my-profession
 {
     font-size: 25px;
     color: --skin-color;
+}
+a{
+    color: var(--skin-color);
 }
 .contact .contact-info-item h4
 {
