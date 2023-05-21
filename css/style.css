@@ -169,6 +169,20 @@ hr{
     border-radius: 4px; 
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); 
   }
+  .slideshow {
+    display: flex;
+    overflow: hidden;
+  }
+  
+  .slideshow img {
+    width: 300px; /* Adjust the width to your desired size */
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+    border: 1px solid #000; /* Add border styles */
+  }
+  
+  
+  
   
   
   
