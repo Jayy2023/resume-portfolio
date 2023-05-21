@@ -618,7 +618,7 @@ h3.my-profession
 .service .service-item .service-item-inner:hover .icon .fa
 {
     font-size: 25px;
-    color: #ffffff;
+    color: white;
 }
 .service .service-item .service-item-inner h4
 {
@@ -639,6 +639,25 @@ h3.my-profession
 {
     padding-bottom: 40px;
 }
+.image-border {
+    border: 2px solid #333;
+    border-radius: 4px;
+    padding: 4px;
+    width: 200px;
+    height: 200px;
+  }
+  .rounded-image {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+  }
+  .image-shadow {
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+    width: 200px;
+    height: 200px;
+  }
+  
+  
 .portfolio .portfolio-heading
 {
     flex: 0 0 100%;
@@ -684,6 +703,13 @@ h3.my-profession
     font-size: 15px;
     margin-bottom: 60px;
 }
+.contact-sub-title a
+{
+    color: var(--text-black-900);
+    text-align: center;
+    font-size: 15px;
+    margin-bottom: 60px;
+}
 .contact .contact-info-item
 {
     flex: 0 0 25%;
@@ -695,10 +721,10 @@ h3.my-profession
 {
     display: inline-block;
 }
-.contact .contact-info-item .icon .fa
+.contact .contact-info-item .icon .fa-sharp
 {
     font-size: 25px;
-    color: var(--skin-color);
+    color: --skin-color;
 }
 .contact .contact-info-item h4
 {
@@ -715,6 +741,15 @@ h3.my-profession
     color: var(--text-black-700);
     font-weight: 400;
 }
+.contact .contact-info-item a
+{
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--text-black-900);
+    text-transform: capitalize;
+    margin: 15px 0 5px;
+}
+
 .contact .contact-form
 {
     flex: 0 0 100%;
