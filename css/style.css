@@ -169,20 +169,29 @@ hr{
     border-radius: 4px; 
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); 
   }
-  .slideshow {
-    display: flex;
-    overflow: hidden;
-    max-width: 100%; /* Set the maximum width for the slideshow */
-    height: auto;
+  .image-container {
+    position: relative;
+    
   }
   
-  .slideshow img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    transition: transform 0.3s ease-in-out;
-    border: 1px solid #000;
+  .image-container img {
+    width: 200px; /* Adjust the width as desired */
+    height: 200px; /* Adjust the height as desired */
+    border: 1px solid black;
+    margin-right: 10px; /* Adjust the margin as desired */
   }
+  .image-container hr {
+    position: absolute;
+    bottom: 3px;
+    left: 5px;
+    width: 100%;
+    
+  }
+hr{
+    margin: px;
+    padding: 3px;
+    background-color: black;
+}  
   
   
   

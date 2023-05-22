@@ -90,28 +90,6 @@ const nav = document.querySelector(".nav"),
                     allSection[i].classList.toggle("open");
                 }
             }
-            var slideshow = document.querySelector('.slideshow');
-            var images = slideshow.getElementsByTagName('img');
-            var currentIndex = 0;
-            
-            function showImage(index) {
-              for (var i = 0; i < images.length; i++) {
-                if (i === index) {
-                  images[i].style.display = 'block';
-                } else {
-                  images[i].style.display = 'none';
-                }
-              }
-            }
-            
-            function nextImage() {
-              currentIndex++;
-              if (currentIndex >= images.length) {
-                currentIndex = 0;
-              }
-              showImage(currentIndex);
-            }
-            
-            setInterval(nextImage, 3000); // Automatically switch images every 3 seconds
+           
             
    
