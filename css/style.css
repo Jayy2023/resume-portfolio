@@ -169,12 +169,11 @@ hr{
     border-radius: 4px; 
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); 
   }
-
   .slideshow {
     display: flex;
     overflow: hidden;
-    width: 400px; /* Set the desired width for the slideshow */
-    height: 450px; /* Set the desired height for the slideshow */
+    max-width: 100%; /* Set the maximum width for the slideshow */
+    height: auto;
   }
   
   .slideshow img {
@@ -184,8 +183,6 @@ hr{
     transition: transform 0.3s ease-in-out;
     border: 1px solid #000;
   }
-  
-  
   
   
   
@@ -943,4 +940,34 @@ a{
       height: auto;
     }
   }
+  @media only screen 
+  and (device-width: 428px) 
+  and (device-height: 926px) 
+  and (-webkit-device-pixel-ratio: 3),
+  only screen 
+  and (device-width: 414px) 
+  and (device-height: 896px) 
+  and (-webkit-device-pixel-ratio: 3),
+  only screen 
+  and (device-width: 414px) 
+  and (device-height: 896px) 
+  and (-webkit-device-pixel-ratio: 2),
+  only screen 
+  and (device-width: 414px) 
+  and (device-height: 896px) 
+  and (-webkit-device-pixel-ratio: 3.5),
+  only screen 
+  and (device-width: 428px) 
+  and (device-height: 926px) 
+  and (-webkit-device-pixel-ratio: 2),
+  only screen 
+  and (device-width: 428px) 
+  and (device-height: 926px) 
+  and (-webkit-device-pixel-ratio: 3.5) {
+
+  .slideshow img {
+    max-width: 428px;
+    height: auto;
+  }
+}
   
