@@ -909,6 +909,20 @@ a{
     {
         /* display: none; */
     }
+    .slideshow {
+        display: flex;
+        overflow: hidden;
+        width: 400px; /* Set the desired width for the slideshow */
+        height: 450px; /* Set the desired height for the slideshow */
+      }
+      
+      .slideshow img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        transition: transform 0.3s ease-in-out;
+        border: 1px solid #000;
+      }
 }
 @media (max-width:767px)
 {
