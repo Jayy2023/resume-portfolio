@@ -434,16 +434,34 @@ h3.my-profession
     flex: 0 0 100%;
     max-width: 100%;
 }
-.buttons{
-    background-color: var(--skin-color); /* Green background color */
-    color: white; /* Text color */
-    padding: 10px 20px; /* Padding around the button */
-    border: none; /* Remove default button border */
-    border-radius: 4px; /* Rounded corners */
-    font-size: 16px; /* Font size */
-    cursor: pointer; /* Cursor style */
-    transition: background-color 0.3s ease; /* Smooth color transition */
-}
+.buttons {
+    background-color: var(--skin-color);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .buttons a {
+    text-decoration: none;
+  }
+  
+  .buttons .hover-text {
+    display: none;
+  }
+  
+  .buttons:hover .default-text {
+    display: none;
+  }
+  
+  .buttons:hover .hover-text {
+    display: inline;
+  }
+  
+
+  
 .about .about-content .about-text
 {
     flex: 0 0 100%;
