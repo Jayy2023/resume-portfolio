@@ -86,9 +86,9 @@ ul
 }
 .container
 {
-    max-width: 1100px;
-    width: 100%;
-    margin: auto;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
 }
 .section .container
 {
@@ -149,16 +149,27 @@ CSS code. The margin-top property is used to add some space between the text and
     text-align: center;
 
     
-}
-.project-video {
-    width: 100%; /* Set the desired width */
-    max-width: 640px; /* Set a maximum width */
-    height: auto; /* Maintain aspect ratio */
-    display: block; /* Remove default inline behavior */
-    margin: 0 auto; /* Center the video horizontally */
-    border: 1px solid #ccc; /* Add a border */
-    border-radius: 4px; /* Add rounded corners */
+} .description-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
   }
+
+  .description-item {
+    width: calc(50% - 10px); /* Adjust the width as needed */
+  }
+
+.portfolio-img {
+    width: 100%;
+    height: auto;
+  }
+
+  .portfolio-img video {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
 hr{
     color: var(--skin-color);
 }  
@@ -730,6 +741,34 @@ h3.my-profession
 {
     padding-bottom: 40px;
 }
+
+  
+  .portfolio-heading {
+    width: 45%; /* Adjust the width as per your preference */
+    margin-bottom: 30px;
+  }
+  
+  .portfolio-item {
+    width: 45%; /* Adjust the width as per your preference */
+    margin-bottom: 30px;
+  }
+  
+  /* Add media queries as necessary for responsive layout */
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .portfolio-heading,
+    .portfolio-item {
+      width: 100%;
+    }
+  }
+  p{
+    font-size: 12px;
+  }
+  
 .image-border {
     border: 2px solid #333;
     border-radius: 4px;
