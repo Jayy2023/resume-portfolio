@@ -222,15 +222,19 @@ hr{
     
   }
   
-  
-.row
-{
+  .row {
     display: flex;
+    justify-content: center;
+    align-items: flex-start;
     flex-wrap: wrap;
-    margin-left: -15px;
-    margin-right: -15px;
-    position: relative;
-}
+  }
+  
+  .portfolio-item {
+    width: calc(50% - 30px); /* Adjust the width as needed */
+    margin: 15px;
+  }
+  
+
 .btn
 {
     font-size: 16px;
@@ -466,7 +470,7 @@ h3.my-profession
   }
   
   .buttons:hover {
-    background-color: cornflowerblue; Change to desired background color
+    background-color: lightgrey; Change to desired background color
   }
   
   .buttons:hover .default-text {
@@ -737,22 +741,103 @@ h3.my-profession
     line-height: 25px;
 }
 /* portfolio */
-.portfolio .container
-{
-    padding-bottom: 40px;
-}
-
+/* Portfolio section */
+.portfolio {
+    background-color: #f8f8f8;
+    padding: 50px 0;
+  }
+  
+  .portfolio .container {
+    max-width: 960px;
+    margin: 0 auto;
+  }
   
   .portfolio-heading {
-    width: 45%; /* Adjust the width as per your preference */
+    text-align: center;
     margin-bottom: 30px;
+  }
+  
+  .portfolio-heading h2 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
   }
   
   .portfolio-item {
-    width: 45%; /* Adjust the width as per your preference */
+    position: relative;
+    overflow: hidden;
     margin-bottom: 30px;
   }
   
+  .portfolio-item .portfolio-item-inner {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .portfolio-item .portfolio-img img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .portfolio-item .description-item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 2;
+  }
+  
+  .portfolio-item:hover .description-item {
+    opacity: 1;
+  }
+  
+  .portfolio-item .description-item p {
+    color: #fff;
+    font-size: 18px;
+    text-align: center;
+    padding: 10px;
+    margin: 0;
+  }
+  
+  .buttons {
+    display: inline-block;
+    margin-bottom: 10px;
+  }
+  
+  .buttons .default-text {
+    display: inline-block;
+    /* background-color: #333; */
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: 16px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .buttons .hover-text {
+    display: none;
+    /* background-color: #555; */
+  }
+  
+  .buttons:hover .default-text {
+    display: none;
+  }
+  
+  .buttons:hover .hover-text {
+    display: inline-block;
+  }
+  
+ 
   /* Add media queries as necessary for responsive layout */
   @media (max-width: 768px) {
     .container {
